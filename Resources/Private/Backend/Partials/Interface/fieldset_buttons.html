@@ -1,0 +1,27 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment></f:comment>
+<f:spaceless>
+    <fieldset id="editThemeFormButtons" class="col-sm-12">
+        <button type="button" id="previewButton" title="Vorschau"
+                class="btn btn-primary  ui-button ui-corner-all ui-widget"><span
+                class="ui-icon ui-icon-play"></span>Vorschau
+        </button>
+        <f:if condition="{themes.cssruntime}">
+            <button type="button" id="compileButton" title="CSS Anzeigen"
+                    class="btn btn-success  ui-button ui-corner-all ui-widget"><span
+                    class="ui-icon ui-icon-clipboard"></span>CSS Anzeigen
+            </button>
+        </f:if>
+        <button type="button" id="resetButton" title="Zurücksetzen" class="btn btn-danger ui-button ui-corner-all ui-widget">
+            <span class="ui-icon ui-icon-trash"></span>Zurücksetzen
+        </button>
+        <button type="button" id="detachButton" title="aus" class="btn btn-danger ui-button ui-corner-all ui-widget">
+           Text Links entfernen
+        </button>
+       </fieldset>
+</f:spaceless>
+
+
+
+

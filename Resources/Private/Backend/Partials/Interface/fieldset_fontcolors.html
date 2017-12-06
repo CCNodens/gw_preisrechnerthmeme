@@ -1,0 +1,43 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment><f:debug>{themes}</f:debug></f:comment>
+<f:spaceless>
+
+    <fieldset class="col-sm-12 col-lg-3">
+        <legend>Schriftfarben</legend>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <label class="form-control-label"
+                           for="cf_font_headlines">Überschriftenfarbe</label>
+                    <f:form.textfield id="cf_font_headlines" name="cf_font_headlines" value="{themes.cf_font_headlines}" class="form-control colorPicker fullColors" />
+
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label class="form-control-label" for="cf_font">Schrift- /
+                        Linkfarbe</label>
+                    <f:form.textfield id="cf_font" name="cf_font" value="{themes.cf_font}" class="form-control colorPicker fullColors" />
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label class="form-control-label" for="cf_font_hover">Linkfarbe
+                        Hover</label>
+                    <f:form.textfield id="cf_font_hover" name="cf_font_hover" value="{themes.cf_font_hover}" class="form-control colorPicker fullColors" />
+                </div>
+                <div class="col-sm-12">
+                    <label class="form-control-label">1. Schriftart
+                        <small>(Tabs, Überschriften)</small>
+                    </label>
+                    <f:form.select class="form-control" value="{themes.cf_font_family_first}" name="cf_font_family_first" options="{themes.fontSelectors}" />
+                </div>
+                <div class="col-sm-12">
+                    <label class="form-control-label">2. Schriftart
+                        <small>(Texte, Labels)</small>
+                    </label>
+                    <f:form.select class="form-control" value="{themes.cf_font_family_second}" name="cf_font_family_second" options="{themes.fontSelectors}" />
+
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+</f:spaceless>

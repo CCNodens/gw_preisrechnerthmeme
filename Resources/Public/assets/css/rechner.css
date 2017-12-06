@@ -1,0 +1,678 @@
+@charset "UTF-8";
+/*********************
+FONTS
+*********************/
+
+
+/*********************
+BREAKPOINTS
+*********************/
+.row.content-calculator {
+  color: #ffffff; }
+  @media (max-width: 1130px) {
+    .row.content-calculator {
+      margin: 0 50px; } }
+  @media (max-width: 900px) {
+    .row.content-calculator {
+      margin: 0 30px; } }
+  .row.content-calculator ul.nav {
+    display: flex;
+    overflow: hidden;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 99;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 2.2rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    @media (max-width: 640px) {
+      .row.content-calculator ul.nav {
+        overflow: visible; } }
+    .row.content-calculator ul.nav li {
+      flex: 0 1 33.34%;
+      background: #898d92;
+      background: -moz-linear-gradient(left, #898d92 0%, #a2a2a2 100%);
+      background: -webkit-linear-gradient(left, #898d92 0%, #a2a2a2 100%);
+      background: linear-gradient(to right, #898d92 0%, #a2a2a2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = "#898d92", endColorstr = "#a2a2a2", GradientType = 1);
+      height: 76px;
+      opacity: 0.9; }
+      .row.content-calculator ul.nav li.current {
+        order: 0; }
+      .row.content-calculator ul.nav li.gas {
+        order: 1; }
+      .row.content-calculator ul.nav li.heat {
+        order: 2; }
+      @media (max-width: 640px) {
+        .row.content-calculator ul.nav li {
+          display: none;
+          position: absolute;
+          width: 100%; }
+          .row.content-calculator ul.nav li:first-child .dropdown-icon, .row.content-calculator ul.nav li:first-child.active.focus .dropdown-icon {
+            display: inline-block; }
+          .row.content-calculator ul.nav li:nth-child(2) {
+            top: 76px; }
+            .row.content-calculator ul.nav li:nth-child(2).active.focus {
+              top: 76px; }
+          .row.content-calculator ul.nav li:nth-child(3) {
+            top: 152px; }
+            .row.content-calculator ul.nav li:nth-child(3).active.focus {
+              top: 152px; } }
+      .row.content-calculator ul.nav li a {
+        text-decoration: none;
+        padding: 16px;
+        display: inline-flex;
+        align-items: center;
+        border: 0;
+        border-radius: 0;
+        width: 100%;
+        color: #ffffff; }
+        .row.content-calculator ul.nav li a:hover, .row.content-calculator ul.nav li a:focus {
+          background-color: transparent; }
+        .row.content-calculator ul.nav li a i {
+          width: 40px;
+          height: 40px;
+          margin-right: 16px; }
+          .row.content-calculator ul.nav li a i .tab-icon {
+            width: 100%;
+            height: 100%; }
+      .row.content-calculator ul.nav li .dropdown-icon {
+        width: 24px;
+        height: 24px;
+        margin-left: auto;
+        display: none; }
+      .row.content-calculator ul.nav li.active {
+        background: #83878c;
+        opacity: 1; }
+        @media (max-width: 640px) {
+          .row.content-calculator ul.nav li.active {
+            display: block;
+            top: 0px; }
+            .row.content-calculator ul.nav li.active .dropdown-icon {
+              display: inline-block; } }
+        .row.content-calculator ul.nav li.active.focus .dropdown-icon {
+          display: none; }
+        .row.content-calculator ul.nav li.active a {
+          background-color: transparent; }
+          .row.content-calculator ul.nav li.active a:hover, .row.content-calculator ul.nav li.active a:focus {
+            border: 0; }
+  .row.content-calculator .calculator.no-tabs .tab-content {
+    top: 0; }
+  .row.content-calculator .tab-content {
+    background-color: #83878c;
+    position: relative;
+    padding: 30px 30px 15px 30px;
+    margin-top: 0;
+    font-family: 'Roboto Light', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    @media (max-width: 640px) {
+      .row.content-calculator .tab-content {
+        margin-top: 76px; } }
+    .row.content-calculator .tab-content .tab-pane .calculatorContent {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft {
+        flex: 0 0 50%;
+        border-right: 1px solid #ffffff;
+        padding-right: 30px;
+        max-width: 50%; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight {
+          padding-left: 30px;
+          max-width: 50%; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .numberOfPersons, .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .flatSizes {
+            flex-basis: 100%;
+            margin-bottom: 10px; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField {
+            flex: 0 0 30%; }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField.postcode {
+              flex-basis: 15%; }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField#postcode-current, .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField#postcode-gas {
+              order: 0; }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField#nennwaermebelastung {
+              flex-basis: 30%; }
+            @media (max-width: 1130px) {
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField {
+                flex-basis: 47.5%; } }
+            @media (max-width: 900px) {
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField {
+                flex-basis: 100%; } }
+          @media (max-width: 1130px) {
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .counter-types {
+              right: 30px; } }
+          @media (max-width: 640px) {
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .counter-types {
+              right: auto; } }
+        @media (max-width: 640px) {
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft {
+            flex-basis: 100%;
+            border-right: 0;
+            padding-right: 0;
+            max-width: 100%; }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight {
+              flex-basis: 100%;
+              padding-left: 0;
+              padding-top: 30px;
+              max-width: 100%; }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField {
+                flex-basis: 47.5%; }
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField.button {
+                  flex-basis: 100%; } }
+        @media (max-width: 420px) {
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentLeft ~ .calContentRight .inputField {
+            flex-basis: 100%; } }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent .calContentRight {
+        flex: 1 0 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%; }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes {
+        flex-basis: 47.5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        @media (max-width: 640px) {
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes {
+            display: none; } }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .desc, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .desc {
+          flex-basis: 100%; }
+          @media (max-width: 768px) {
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .desc, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .desc {
+              font-size: 1.3rem; } }
+          @media (max-width: 640px) {
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .desc, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .desc {
+              font-size: 1.5rem; } }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .desc p, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .desc p {
+            margin-bottom: 6px; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize {
+          flex: 0 0 18%;
+          border: 1px solid #ffffff;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          margin-bottom: 15px;
+          height: 60px; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize:hover, .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize.active, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize:hover, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.active {
+            border-color: #e6b800;
+            background-color: #e6b800; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize .icon-house, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize .icon-house {
+            width: 30%;
+            height: 100%;
+            margin: 0 0 5px 0;
+            display: flex; }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize .icon-house svg, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize .icon-house svg {
+              width: 100%;
+              align-self: flex-end; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize.s30 .icon-house, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.s30 .icon-house {
+            width: 10%;
+            /*
+
+                @include breakpoint(calcBreakPointXLarge) {
+                  width: 8%;
+                }
+
+                @include breakpoint(calcBreakPointXXLarge) {
+                  width: 6%;
+                }
+                */ }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize.s50 .icon-house, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.s50 .icon-house {
+            width: 15%;
+            /*
+
+                @include breakpoint(calcBreakPointXLarge) {
+                  width: 11%;
+                }
+
+                @include breakpoint(calcBreakPointXXLarge) {
+                  width: 9%;
+                }
+                */ }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize.s100 .icon-house, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.s100 .icon-house {
+            width: 20%;
+            /*
+
+                @include breakpoint(calcBreakPointXLarge) {
+                  width: 14%;
+                }
+
+                @include breakpoint(calcBreakPointXXLarge) {
+                  width: 11%;
+                }
+                */ }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize.s150 .icon-house, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.s150 .icon-house {
+            width: 25%;
+            /*
+
+                @include breakpoint(calcBreakPointXLarge) {
+                  width: 17%;
+                }
+
+                @include breakpoint(calcBreakPointXXLarge) {
+                  width: 15%;
+                }
+
+                @include breakpoint(calcBreakPointXXXLarge) {
+                  width: 13%;
+                }
+                */ }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize.s180 .icon-house, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.s180 .icon-house {
+            width: 30%;
+            /*
+
+                @include breakpoint(calcBreakPointXLarge) {
+                  width: 20%;
+                }
+
+                @include breakpoint(calcBreakPointXXLarge) {
+                  width: 18%;
+                }
+
+                @include breakpoint(calcBreakPointXXXLarge) {
+                  width: 16%;
+                }
+                */ }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons {
+          flex: 0 0 18%;
+          border: 1px solid #ffffff;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          margin-bottom: 15px;
+          height: 60px;
+          display: flex; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons:hover, .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons.active, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons:hover, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons.active {
+            border-color: #01a427;
+            background-color: #01a427; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons .icon-persons, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons .icon-persons {
+            width: 70%;
+            height: 100%;
+            margin: 15px 0 6px;
+            align-self: center;
+            /*
+              @include breakpoint(calcBreakPointXXLarge) {
+                width: 50%;
+              }
+              
+
+              @include breakpoint(calcBreakPointXXXLarge) {
+                width: 40%;
+              }
+              */ }
+            @media (min-width: 1280px) {
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons .icon-persons, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons .icon-persons {
+                margin-top: 10px; } }
+            @media (max-width: 900px) {
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons .icon-persons, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons .icon-persons {
+                margin-top: 20px; } }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons .icon-persons svg, .row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons .icon-persons svg {
+              width: 100%; }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent input, .row.content-calculator .tab-content .tab-pane .calculatorContent select {
+        border: 0;
+        padding: 5px 0;
+        color: #424242;
+        background-color: #dcdbd9;
+        font-size: 3rem;
+        text-align: left;
+        width: 100%;
+        outline: 0; }
+        @media (max-width: 420px) {
+          .row.content-calculator .tab-content .tab-pane .calculatorContent input:not('.postcode'), .row.content-calculator .tab-content .tab-pane .calculatorContent select:not('.postcode') {
+            font-size: 2rem; } }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="text"], .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="number"] {
+        padding: 5px 18px;
+        -moz-appearance: textfield; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="text"].unit, .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="number"].unit {
+          padding: 5px 0; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="text"]::-webkit-outer-spin-button, .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="text"]::-webkit-inner-spin-button, .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="number"]::-webkit-outer-spin-button, .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none !important;
+          margin: 0 !important;
+          -moz-appearance: textfield !important; }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="button"], .row.content-calculator .tab-content .tab-pane .calculatorContent input[type="submit"] {
+        text-align: center; }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent .inputRow {
+        display: flex;
+        justify-content: space-between;
+        flex: 1 0 100%; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .inputRow:not(:last-of-type) {
+          margin-bottom: 20px; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .inputRow .inputField {
+          flex: 0 0 30%; }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField {
+        flex: 0 0 15%;
+        margin-bottom: 15px;
+        display: flex; }
+        @media (max-width: 1130px) {
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField {
+            flex-basis: 47.5%; } }
+        @media (max-width: 900px) {
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField {
+            flex: 0 0 47.5%; } }
+        @media (max-width: 640px) {
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField.button {
+            flex-basis: 100%; } }
+        @media (max-width: 420px) {
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField {
+            flex-basis: 100%; } }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label {
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 1.5rem;
+          margin-bottom: 0;
+          flex-basis: 100%; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .labelTxt {
+            margin-bottom: 7px;
+            white-space: nowrap; }
+            @media (max-width: 768px) {
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .labelTxt {
+                font-size: 1.3rem; } }
+            @media (max-width: 640px) {
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .labelTxt {
+                font-size: 1.5rem; } }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type {
+            flex-basis: 100%;
+            position: relative; }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option {
+              display: block;
+              padding: 6px 10px;
+              height: 60px;
+              background-color: #dcdbd9;
+              color: #8f8e8d;
+              font-size: 2rem;
+              line-height: 4.6rem;
+              white-space: nowrap;
+              cursor: pointer;
+              text-overflow: ellipsis; }
+              @media (max-width: 420px) {
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option {
+                  font-size: 2rem; } }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.title .txt.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.title .txt.filled {
+                font-size: 2rem;
+                line-height: 2.3rem;
+                display: flex;
+                align-items: center; }
+                @media (max-width: 1130px) {
+                  .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.title .txt.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.title .txt.filled {
+                    font-size: 1.5rem;
+                    line-height: 2rem; } }
+                @media (max-width: 640px) {
+                  .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.title .txt.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.title .txt.filled {
+                    font-size: 1.5rem;
+                    line-height: 1.7rem; } }
+                @media (max-width: 420px) {
+                  .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.title .txt.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.filled, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.title .txt.filled {
+                    font-size: 1.3rem;
+                    line-height: 1.5rem; } }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.title, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.title {
+                border-bottom: 2px solid #01a427;
+                background: #dcdbd9 url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.83 12.83'><title>icon-arrow-down</title><polygon points='11.41 12.83 0 1.41 1.41 0 11.41 10 21.41 0 22.83 1.41 11.41 12.83' fill='#8f8e8d'/></svg>") 105% 55% no-repeat;
+                background-size: 25% 25%;
+                display: flex; }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type.select-counter .title .icon {
+              width: 24px;
+              margin: 7px 6px 0 0;
+              display: none; }
+              @media (max-width: 900px) {
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type.select-counter .title .icon {
+                  width: 22px;
+                  margin-top: 6px; } }
+              @media (max-width: 420px) {
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type.select-counter .title .icon {
+                  width: 20px;
+                  margin-top: 5px; } }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type.select-counter .title .icon .icon-counter-type-1 {
+                opacity: .7; }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types {
+              flex-direction: column;
+              position: absolute;
+              background-color: #dcdbd9;
+              color: #424242;
+              z-index: 99;
+              width: 100%; }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .counter-row {
+                flex: 0 0 100%;
+                display: flex;
+                min-width: 400px; }
+                @media (max-width: 540px) {
+                  .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .counter-row {
+                    min-width: auto; } }
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .counter-row:last-child .ws-col:last-child {
+                  margin-bottom: 16px; }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .hhs-col, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col {
+                padding: 16px;
+                display: flex;
+                align-items: center; }
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .hhs-col.title, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col.title {
+                  padding: 10px 16px 0;
+                  font-size: 1.4rem;
+                  color: #8f8e8d;
+                  align-items: flex-start; }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .hhs-col {
+                flex: 0 0 30%;
+                justify-content: center;
+                background-color: #e5e4e2;
+                overflow: hidden; }
+                @media (max-width: 540px) {
+                  .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .hhs-col {
+                    flex-basis: 25%; } }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col {
+                margin: 0 16px;
+                background-color: #dcdbd9;
+                justify-content: flex-start;
+                cursor: pointer;
+                width: 70%; }
+                @media (max-width: 420px) {
+                  .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col {
+                    margin: 0; } }
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col:not(.title):hover {
+                  background-color: #eeedec; }
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col .icon {
+                  flex: 0 0 35%; }
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col .txt {
+                  flex: 1 0 65%;
+                  font-size: 2rem; }
+                  @media (max-width: 420px) {
+                    .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col .txt {
+                      font-size: 1.6rem; } }
+                  .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col .txt .subtext {
+                    color: #8f8e8d;
+                    font-size: 1.4rem;
+                    white-space: nowrap; }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types svg {
+                width: 52px; }
+                @media (max-width: 540px) {
+                  .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types svg {
+                    width: 40px; } }
+                .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types svg.icon-counter-type-1 {
+                  opacity: .7; }
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .heating-types {
+              background-color: #dcdbd9;
+              color: #424242;
+              position: absolute;
+              width: 100%; }
+              .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .heating-types .heating-type {
+                padding: 16px;
+                font-size: 2rem;
+                width: 100%;
+                cursor: pointer; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField.unit input {
+          width: 80%; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField.unit input.unit {
+            width: 20%;
+            font-size: 1.2rem;
+            text-align: left; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField.unit input.tariff {
+            width: 20%;
+            text-align: left; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField.button {
+          order: 99; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField.button input {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            padding: 17px 0; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField.postcode {
+          flex-basis: 10; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField#postcode-current, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField#postcode-gas {
+          order: -1; }
+          @media (max-width: 1130px) {
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField#postcode-current, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField#postcode-gas {
+              order: 2; } }
+          @media (max-width: 900px) {
+            .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField#postcode-current, .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField#postcode-gas {
+              order: 3; } }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent .inputField#nennwaermebelastung {
+          margin-top: 0px;
+          overflow: hidden;
+          display: none; }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent h1.title, .row.content-calculator .tab-content .tab-pane .calculatorContent h2.title, .row.content-calculator .tab-content .tab-pane .calculatorContent h3.title {
+        margin-top: 0;
+        flex: 1 0 100%; }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent p {
+        font-family: 'Roboto Regular', sans-serif;
+        color: #dcdbd9; }
+      .row.content-calculator .tab-content .tab-pane .calculatorContent ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px; }
+        .row.content-calculator .tab-content .tab-pane .calculatorContent ul li {
+          padding-left: 1rem; }
+          .row.content-calculator .tab-content .tab-pane .calculatorContent ul li::before {
+            content: "â€¢ ";
+            color: #ffffff;
+            font-size: 1.5rem;
+            left: 0;
+            top: 2px; }
+    .row.content-calculator .tab-content .tab-pane#current input {
+      border-bottom: 2px solid #01a427; }
+    .row.content-calculator .tab-content .tab-pane#current .inputField.button input {
+      background-color: #01a427;
+      color: #ffffff; }
+      .row.content-calculator .tab-content .tab-pane#current .inputField.button input:hover {
+        background-color: #015815;
+        border-bottom: 2px solid #015815;
+        cursor: pointer; }
+    .row.content-calculator .tab-content .tab-pane#gas input {
+      border-bottom: 2px solid #ffcc00; }
+    .row.content-calculator .tab-content .tab-pane#gas .inputField {
+      overflow: hidden; }
+      .row.content-calculator .tab-content .tab-pane#gas .inputField.button input {
+        background-color: #ffcc00; }
+        .row.content-calculator .tab-content .tab-pane#gas .inputField.button input:hover {
+          background-color: #e6b800;
+          border-bottom: 2px solid #e6b800;
+          cursor: pointer; }
+    .row.content-calculator .tab-content .tab-pane#gas.nennwaerme .calculatorContent .inputField.button {
+      margin-left: auto; }
+    @media (max-width: 640px) {
+      .row.content-calculator .tab-content .tab-pane#gas.nennwaerme .calculatorContent .inputField {
+        flex-basis: 100%; } }
+    .row.content-calculator .tab-content .tab-pane#gas.nennwaerme .calculatorContent .inputField .labelTxt {
+      font-size: 1.5rem; }
+      @media (max-width: 900px) {
+        .row.content-calculator .tab-content .tab-pane#gas.nennwaerme .calculatorContent .inputField .labelTxt {
+          font-size: 1.3rem; } }
+    .row.content-calculator .tab-content .tab-pane#gas.nennwaerme .calculatorContent .inputField#nennwaermebelastung {
+      display: inline; }
+    .row.content-calculator .tab-content .tab-pane#gas.nennwaerme .calculatorContent .calContentLeft ~ .calContentRight .inputField {
+      flex-basis: 47.5%; }
+      @media (max-width: 900px) {
+        .row.content-calculator .tab-content .tab-pane#gas.nennwaerme .calculatorContent .calContentLeft ~ .calContentRight .inputField {
+          flex-basis: 100%; } }
+    .row.content-calculator .tab-content .tab-pane#heat input {
+      border-bottom: 2px solid #01a427; }
+    .row.content-calculator .tab-content .tab-pane#heat .inputField {
+      flex-basis: 30%; }
+      @media (max-width: 1130px) {
+        .row.content-calculator .tab-content .tab-pane#heat .inputField {
+          flex-basis: 30%; } }
+      .row.content-calculator .tab-content .tab-pane#heat .inputField .labelTxt {
+        flex-basis: 100%; }
+      .row.content-calculator .tab-content .tab-pane#heat .inputField input.tariff {
+        width: 20%;
+        background-color: #eeedec;
+        text-align: center; }
+        @media (max-width: 900px) {
+          .row.content-calculator .tab-content .tab-pane#heat .inputField input.tariff {
+            width: 30%; } }
+        @media (max-width: 768px) {
+          .row.content-calculator .tab-content .tab-pane#heat .inputField input.tariff {
+            width: 20%; } }
+      .row.content-calculator .tab-content .tab-pane#heat .inputField input.consumption {
+        width: 70%; }
+        @media (max-width: 900px) {
+          .row.content-calculator .tab-content .tab-pane#heat .inputField input.consumption {
+            width: 55%; } }
+        @media (max-width: 768px) {
+          .row.content-calculator .tab-content .tab-pane#heat .inputField input.consumption {
+            width: 70%; } }
+      .row.content-calculator .tab-content .tab-pane#heat .inputField input.unit {
+        width: 10%; }
+        @media (max-width: 900px) {
+          .row.content-calculator .tab-content .tab-pane#heat .inputField input.unit {
+            width: 15%; } }
+        @media (max-width: 768px) {
+          .row.content-calculator .tab-content .tab-pane#heat .inputField input.unit {
+            width: 10%; } }
+      .row.content-calculator .tab-content .tab-pane#heat .inputField.button {
+        flex-basis: 30%; }
+        .row.content-calculator .tab-content .tab-pane#heat .inputField.button input {
+          background-color: #01a427;
+          color: #ffffff; }
+          .row.content-calculator .tab-content .tab-pane#heat .inputField.button input:hover {
+            background-color: #015815;
+            border-bottom: 2px solid #015815;
+            cursor: pointer; }
+    @media (max-width: 768px) {
+      .row.content-calculator .tab-content .tab-pane#heat .calContentRight .inputRow {
+        flex-wrap: wrap; }
+        .row.content-calculator .tab-content .tab-pane#heat .calContentRight .inputRow .inputField {
+          flex-basis: 100%; } }
+    .row.content-calculator .tab-content .tab-pane#heat .calContentLeft ~ .calContentRight .inputRow {
+      flex-wrap: wrap; }
+      .row.content-calculator .tab-content .tab-pane#heat .calContentLeft ~ .calContentRight .inputRow .inputField {
+        flex-basis: 100%; }
+  .row.content-calculator #nennwaermebelastung {
+    display: none; }
+
+.no-padding .row.content-calculator .calculator ul.nav-tabs {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.no-padding .row.content-calculator .calculator .tab-content {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: auto; }
+
+.no-padding.fullwidth .row.content-calculator .calculator .tab-content {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+body .page.design2017.isHomepage .container > .row.content-calculator {
+  margin: 0 -15px; }
+  body .page.design2017.isHomepage .container > .row.content-calculator .calculator {
+    margin: -150px auto 0; }
+    @media (max-width: 1280px) {
+      body .page.design2017.isHomepage .container > .row.content-calculator .calculator {
+        margin-top: 0; } }
+    body .page.design2017.isHomepage .container > .row.content-calculator .calculator ul.nav-tabs {
+      padding-left: 0; }
+
+@media (max-width: 1280px) {
+  body .page.design2017.isHomepage .container > .row .innerContainer {
+    width: 100%;
+    display: table; } }
+
+body .page.design2017.isHomepage .container .content-home-top.first-row {
+  margin: 0 -15px; }
+
+.dev-container {
+  height: 400px; }
+

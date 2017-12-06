@@ -1,0 +1,24 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="typo3-fullDoc">
+
+	<div id="typo3-docbody">
+		<div id="typo3-inner-docbody">
+			<f:flashMessages />
+<f:be.container
+		loadJQuery="true"
+		jQueryNamespace="none"
+		includeCssFiles="{0:'/typo3conf/ext/gw_preisrechnertheme/Resources/Public/includeAll.css'}"
+		includeRequireJsModules="{
+            1:'{f:uri.resource(path:\'assets/vendor/bootstrap-3.3.7/bootstrap.min.js\')}',
+            2:'{f:uri.resource(path:\'assets/vendor/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js\')}',
+            3:'{f:uri.resource(path:\'assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js\')}',
+            4:'{f:uri.resource(path:\'assets/js/gw-preisrechner-new.js\')}',
+            5:'{f:uri.resource(path:\'JavaScript/themer.js\')}'}">
+	<f:debug>{_all}</f:debug>
+			<f:render section="content" />
+	</f:be.container>
+		</div>
+	</div>
+</div>
+</html>

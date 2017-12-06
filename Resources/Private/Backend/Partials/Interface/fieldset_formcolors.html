@@ -1,0 +1,25 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment><f:debug>{themes}</f:debug></f:comment>
+<f:spaceless>
+
+    <fieldset class="col-sm-12 col-lg-3">
+        <legend>Formular Style (alle)</legend>
+        <div class="col-sm-12">
+            <label class="form-control-label" for="cf_input_bgr">Input
+                Hintergrundfarbe</label>
+            <f:form.textfield id="cf_input_bgr" name="cf_input_bgr" value="{themes.cf_input_bgr}" class="form-control colorPicker fullColors" />
+        </div>
+        <div class="col-sm-12">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-light {themes.cf_input_act_light}">helle Schrift f. input
+                    <f:form.radio  id="light" name="cf_input_lightOrDarkFont" value="{settings.lightOrDark.light}"  checked="{themes.cf_input_act_light_check}"  />
+                </label>
+                <label class="btn btn-dark {themes.cf_input_act_dark}">dunkle Schrift f. input
+                    <f:form.radio id="dark" name="cf_input_lightOrDarkFont" value="{settings.lightOrDark.dark}" checked="{themes.cf_input_act_dark_check}" />
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+</f:spaceless>

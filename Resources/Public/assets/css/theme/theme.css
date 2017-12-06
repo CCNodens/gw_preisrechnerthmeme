@@ -1,0 +1,113 @@
+
+.icon-house-icon,
+.icon-persons-icon,
+.tab-icon {
+   stroke: #ffffff;
+   fill: #ffffff;
+ }
+ .row.content-calculator .tab-content {
+	background: #898d92;
+}
+.row.content-calculator ul.nav li.active {
+	background:#83878c;
+}
+.row.content-calculator ul.nav li a:hover {
+	color: #ffffff;
+} 
+.row.content-calculator ul.nav li {
+	background: #898d92;
+	background: -moz-linear-gradient(left, #a2a2a2 0%, #a2a2a2 100%);
+	background: -webkit-linear-gradient(left, #898d92 0%, #a2a2a2 100%);
+	background: linear-gradient(to right, #898d92 0%,  #a2a2a2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#898d92", endColorstr="#a2a2a2", GradientType=1);
+	opacity:  0.9;
+} 
+.row.content-calculator .tab-content .tab-pane .calculatorContent p {
+	font-family:Roboto Light, sans-serif!important;;
+	color: #ffffff;
+}
+.row.content-calculator .tab-content #gas.tab-pane ul li::before,
+.row.content-calculator .tab-content #current.tab-pane ul li::before,
+.row.content-calculator .tab-content #heat.tab-pane ul li::before,
+.row.content-calculator ul.nav li a,
+.row.content-calculator {
+	font-family: Roboto Regular, sans-serif!important;;
+	content: "• ";
+	color: #ffffff;
+}
+.row.content-calculator .tab-content #current.tab-pane input {
+	border-bottom: 2px solid #01a427;
+}
+.row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons.active,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons.active {
+	border-color: #01a427;
+	background-color: #01a427;
+}
+.row.content-calculator .tab-content  input {
+	background-color: #dcdbd9!important;
+	color:#424242!important;
+}
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .heating-types,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .hhs-col,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col {
+background-color: #dcdbd9!important;
+color:#424242!important;
+}
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col:hover:not(.title) {
+background-color: #eeedec!important;
+color:#424242!important;
+}
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col .txt .subtext {
+color:#424242!important;
+}
+.row.content-calculator .tab-content #current.tab-pane .inputField.button input,
+#sumbmitPower {
+	background-color:#01a427;
+}
+.row.content-calculator .tab-content .tab-pane .calculatorContent p {
+	font-family:Roboto Light, sans-serif!important;;
+	color: #ffffff;
+}
+.row.content-calculator .tab-content  .tab-pane.active .calculatorContent  {
+color: #ffffff!important;
+}
+#sumbmitPower:hover {
+	border-color: #01a427;
+	background-color: #01a427!important;
+}
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.active {
+	background-color: #e6b800;
+	color:;
+}
+#sumbmitGas {
+	background-color: #ffcc00;
+}
+#sumbmitGas:hover {
+background-color: #e6b800!important;
+color: #424242;
+}
+.row.content-calculator .tab-content #gas.tab-pane input {
+    border-bottom: 2px solid #ffcc00;
+}
+.row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize.active,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.active {
+	border-color: #ffcc00;
+	background-color: #ffcc00;
+}
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.title,
+.row.content-calculator .tab-content #heat.tab-pane input {
+	border-bottom: 2px solid #01a427;
+}
+h2.title.h3 {
+	color:#dcdbd9;
+	font-family:Roboto Light, sans-serif!important;;
+}

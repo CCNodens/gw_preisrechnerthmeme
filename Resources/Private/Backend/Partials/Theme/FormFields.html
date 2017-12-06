@@ -1,0 +1,39 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment>
+    <f:debug>{themes}</f:debug>
+</f:comment>
+<f:spaceless>
+    <f:form.hidden name="cf_currentActiveTab" id="currentActiveTab" value="{themes.cf_currentActiveTab}"/>
+    <f:form.hidden name="formaction" id="formaction" value="update"/>
+    <div class="ui-widget-content" id="themingInterface">
+        <div class="" id="themingInterfaceHead">
+        </div>
+        <div class="row">
+            <!-- THEMING form Begin -->
+            <div class="col-sm-12">
+                <div id="themingInterfaceErrorBox" style="display: none;"></div>
+                <div class="">
+                    <f:render partial="Interface/fieldset_backgrounds.html" arguments="{_all}"/>
+                    <f:render partial="Interface/fieldset_fontcolors.html" arguments="{_all}"/>
+                    <f:render partial="Interface/fieldset_formcolors.html" arguments="{_all}"/>
+                    <div class="col-sm-12 col-lg-3">
+                        <f:render partial="Interface/fieldset_power.html" arguments="{_all}"/>
+                        <f:render partial="Interface/fieldset_heat.html" arguments="{_all}"/>
+                        <f:render partial="Interface/fieldset_gas.html" arguments="{_all}"/>
+
+                    </div>
+                </div>
+            </div>
+            <f:render partial="Interface/fieldset_buttons.html" arguments="{_all}"/>
+        </div>
+    </div>
+</f:spaceless>
+
+<f:if condition="{themes.saveTextArea}">
+    <div id="resultContainer">
+        <f:render partial="Interface/modal_resultContainer.html" arguments="{_all}"/>
+    </div>
+</f:if>
+
+</html>

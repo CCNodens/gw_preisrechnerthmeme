@@ -1,0 +1,174 @@
+#theme  {
+	background-color: transparent;
+	max-width: 1170px !important;
+	min-width: 360px !important;
+	margin: auto !important;
+}
+
+#rechnerCanvas {
+	min-width:360px;
+	padding:140px 0;
+}
+#themingInterface {
+	max-width:1920px;
+	background-color: #f0f0f0;
+	border:1px solid #333;
+	margin:0 auto;
+}
+
+
+#themingInterfaceForm {
+	padding:10px 30px;
+}
+
+
+
+#editThemeForm  input[type='text'] {
+	text-transform:uppercase;
+}
+#editThemeForm fieldset {
+	margin-bottom:8px;
+}
+#editThemeForm btn {
+	color:#000;
+}
+
+#editThemeFormButtons {
+
+}
+
+#themeCalculatorPreview .bg-grey {
+	background-color: transparent;
+}
+
+#editThemeForm fieldset {
+	background-color: transparent;
+	color: #333333;
+
+}
+
+#editThemeForm legend {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 19px;
+	line-height: inherit;
+	color: #424242;
+	border-bottom: 1px solid #ccc;
+}
+/**/
+#editThemeForm .btn.btn-light:hover,
+#editThemeForm .btn-light {
+	background-color:#b3b3b3;
+	color:#fff!important;
+	border:1px solid #fff;
+
+}
+#editThemeForm .btn.btn-dark:hover,
+#editThemeForm .btn-dark {
+	background-color:#efefef;
+	color:#333;
+
+}
+#editThemeForm .btn-light.active::before,
+#editThemeForm .btn-dark.active:before {
+	content: "\f00c";
+	font-family: FontAwesome;
+	border:0px solid #fff;
+	padding: 0 5px 0 0px;
+}
+#editThemeForm .btn-light:before,
+#editThemeForm .btn-dark:before {
+	content: "\f10c";
+	font-family: FontAwesome;
+	border:0px solid #fff;
+	padding: 0 5px 0 0px;
+}
+
+
+#editThemeForm .btn.btn-light,
+#editThemeForm .btn.btn-dark {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 300;
+	font-size:12px;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+
+
+
+#editThemeForm .btn.btn-success {
+	background-color: green;
+	color: #fff;
+	margin: 0 6px;
+	border-radius: 4px!important;
+}
+#editThemeForm .btn.btn-success:hover {
+	background-color: darkgreen;
+	color: #fff;
+}
+#editThemeForm .btn.btn-primary {
+	background-color: blue;
+	color: #fff;	margin: 0 6px;
+	border-radius: 4px!important;
+
+}
+#editThemeForm .btn.btn-primary:hover {
+	background-color: darkblue;
+	color: #fff;
+}
+
+#editThemeForm .btn.btn-danger {
+	color: #fff;
+	background-color: orange;
+	border:none;
+	margin: 0 6px;
+	border-radius: 4px!important;
+}
+#editThemeForm .btn.btn-danger:hover {
+	background-color:darkorange;
+	color: #fff;
+}
+
+#resultContainer {
+/*
+	overflow: auto;
+	border: 1px solid #000;
+	position:absolute;
+	top:10%;
+	left:25%;
+	padding: 10px;
+	z-index:100;
+	background-color: #f0f0f0;
+*/
+}
+
+
+.selectColors,
+.fullColors {
+	font-size:1.1em;
+	line-height: normal;
+}
+
+.ui-widget.submit-button {
+	font-size: 1.5em;
+}
+
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.title,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.title {
+background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.83 12.83'><title>icon-arrow-down</title><polygon points='11.41 12.83 0 1.41 1.41 0 11.41 10 21.41 0 22.83 1.41 11.41 12.83' /></svg>");
+background-repeat:no-repeat;
+background-position-x:105%;
+background-position-y:55%;
+}
+
+.footerInfos ul li {
+	font-size:10px;
+	display: inline;
+	margin:0 10px;
+}

@@ -1,0 +1,26 @@
+/*@import url('https://www.gelsenwasser.de/fileadmin/global/system/css/gw/out.css');*/
+@import 'assets/css/fonts.css';
+@import 'assets/css/rechner.css';
+/*@import url('https://www.gelsenwasser.de/typo3conf/ext/gw_preisrechner/res/css/gw-preisrechner-z-overrides.css');*/
+@import 'assets/css/gw-offline-all.css';
+@import 'assets/vendor/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css';
+@import 'assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css';
+@import 'assets/css/themer-interface.css';
+@import 'assets/css/rechner-theme.css';
+
+
+/* bugfix with long text in left area */
+.row.content-calculator.tab-content.tab-pane.calculatorContent.calContentLeft {
+	max-height: 250px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.calculator .btn {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField {
+
+	display: unset;
+}

@@ -1,0 +1,83 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    220,
+                    121
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": true,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Theme",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "4531918310"
+                },
+                "propertyGroup": {
+                    "properties": []
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Theme=>list"
+                },
+                "description": "Preisrechner Theme",
+                "key": "mod1",
+                "mainModule": "web",
+                "name": "Preisrechner Theme",
+                "tabLabel": "Preisrechner Theme"
+            }
+        ],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "gw_preisrechnertheme",
+        "name": "Preisrechner Theme",
+        "originalExtensionKey": "gw_preisrechnertheme",
+        "originalVendorName": "Vancado",
+        "persons": [],
+        "plugins": [],
+        "vendorName": "Vancado"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-11-08 10:07",
+        "extension_builder_version": "8.7.0",
+        "be_user": " (1)"
+    }
+}

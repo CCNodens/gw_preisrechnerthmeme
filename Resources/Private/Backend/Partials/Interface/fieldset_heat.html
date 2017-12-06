@@ -1,0 +1,37 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment><f:debug>{themes}</f:debug></f:comment>
+<f:spaceless>
+
+    <fieldset id="cfheat" class="col-sm-12">
+        <legend>Heizstrom</legend>
+        <div class="row">
+            <div class="col-sm-12"><label class="form-control-label" for="cf_heat">Heizstrom
+                Farbe</label>
+
+                <f:form.textfield id="cf_heat" name="cf_heat" value="{themes.cf_heat}" class="form-control colorPicker fullColors" />
+            </div>
+            <div class="col-sm-12">Ihr Stromzähler / Ihre Heizung</div>
+            <div class="col-sm-12"><label class="form-control-label"
+                                          for="cf_heat_input_select_fontcolor">Schrift Farbe</label>
+
+                <f:form.textfield id="cf_heat_input_select_fontcolor" name="cf_heat_input_select_fontcolor" value="{themes.cf_heat_input_select_fontcolor}" class="form-control colorPicker fullColors" />
+            </div>
+            <div class="col-sm-12 col-lg-12">
+                <label class="form-control-label" for="cf_heat_input_select">Hintergrund Farbe</label>
+
+                <f:form.textfield id="cf_heat_input_select" name="cf_heat_input_select" value="{themes.cf_heat_input_select}" class="form-control colorPicker fullColors" />
+
+            </div>
+            <div class="col-sm-12 col-lg-12">
+                <label class="form-control-label"
+                       for="cf_heat_input_select_hover">Hover / Active Farbe</label>
+
+                <f:form.textfield id="cf_heat_input_select_hover" name="cf_heat_input_select_hover" value="{themes.cf_heat_input_select_hover}" class="form-control colorPicker fullColors" />
+
+
+            </div>
+        </div>
+    </fieldset>
+
+</f:spaceless>

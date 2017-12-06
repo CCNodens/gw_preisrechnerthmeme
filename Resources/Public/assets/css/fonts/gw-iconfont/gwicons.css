@@ -1,0 +1,75 @@
+/*
+  Icon Font: gwicons
+*/
+
+@font-face {
+  font-family: "gwicons";
+  src: url("./gwicons_3ba08bfd39912624b931ca7490cfd1d4.eot");
+  src: url("./gwicons_3ba08bfd39912624b931ca7490cfd1d4.eot?#iefix") format("embedded-opentype"),
+       url("./gwicons_3ba08bfd39912624b931ca7490cfd1d4.woff") format("woff"),
+       url("./gwicons_3ba08bfd39912624b931ca7490cfd1d4.ttf") format("truetype"),
+       url("./gwicons_3ba08bfd39912624b931ca7490cfd1d4.svg#gwicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "gwicons";
+    src: url("./gwicons_3ba08bfd39912624b931ca7490cfd1d4.svg#gwicons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.gw-ic-mnav-back:before,
+.gw-ic-nav-arrow-down:before,
+.gw-ic-nav-arrow-left:before,
+.gw-ic-nav-arrow-right:before,
+.gw-ic-nav-arrow-up:before,
+.gw-ic-nav-home:before,
+.gw-ic-nav-search:before,
+.gw-ic-tipfla-einkeimblaettrige:before,
+.gw-ic-tipfla-fische:before,
+.gw-ic-tipfla-insekten:before,
+.gw-ic-tipfla-kriechtiere:before,
+.gw-ic-tipfla-lurche:before,
+.gw-ic-tipfla-muscheln:before,
+.gw-ic-tipfla-pilze:before,
+.gw-ic-tipfla-saeugetiere:before,
+.gw-ic-tipfla-spinnentiere:before,
+.gw-ic-tipfla-voegel:before,
+.gw-ic-tipfla-zweikeimblaettrige:before {
+  display: inline-block;
+  font-family: "gwicons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.gw-ic-mnav-back:before { content: "\f10b"; }
+.gw-ic-nav-arrow-down:before { content: "\f10c"; }
+.gw-ic-nav-arrow-left:before { content: "\f10d"; }
+.gw-ic-nav-arrow-right:before { content: "\f10e"; }
+.gw-ic-nav-arrow-up:before { content: "\f10f"; }
+.gw-ic-nav-home:before { content: "\f110"; }
+.gw-ic-nav-search:before { content: "\f111"; }
+.gw-ic-tipfla-einkeimblaettrige:before { content: "\f112"; }
+.gw-ic-tipfla-fische:before { content: "\f113"; }
+.gw-ic-tipfla-insekten:before { content: "\f114"; }
+.gw-ic-tipfla-kriechtiere:before { content: "\f115"; }
+.gw-ic-tipfla-lurche:before { content: "\f116"; }
+.gw-ic-tipfla-muscheln:before { content: "\f117"; }
+.gw-ic-tipfla-pilze:before { content: "\f118"; }
+.gw-ic-tipfla-saeugetiere:before { content: "\f119"; }
+.gw-ic-tipfla-spinnentiere:before { content: "\f11a"; }
+.gw-ic-tipfla-voegel:before { content: "\f11b"; }
+.gw-ic-tipfla-zweikeimblaettrige:before { content: "\f11c"; }

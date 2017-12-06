@@ -1,0 +1,23 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment><f:debug>{themes}</f:debug></f:comment>
+<f:spaceless>
+
+    <fieldset id="cfgas" class="col-sm-12">
+        <legend>Gas</legend>
+        <div class="row">
+            <div class="col-sm-12"><label class="form-control-label" for="cf_gas">Gas
+                Farbe</label>
+                <f:form.textfield id="cf_gas" name="cf_gas" value="{themes.cf_gas}" class="form-control colorPicker fullColors" />
+
+            </div>
+            <div class="col-sm-12"><label class="form-control-label"
+                                          for="cf_gas_hover">Berechnen Button Hover</label>
+
+                <f:form.textfield id="cf_gas_hover" name="cf_gas_hover" value="{themes.cf_gas_hover}" class="form-control colorPicker fullColors" />
+            </div>
+
+        </div>
+    </fieldset>
+
+</f:spaceless>

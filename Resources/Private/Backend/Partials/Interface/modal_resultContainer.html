@@ -1,0 +1,30 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment><f:debug>{themes}</f:debug>
+
+        <div class="modal fade" id="resultContainerModal" tabindex="-1" role="dialog" aria-labelledby="resultContainerLabel" aria-hidden="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="resultContainerLabel">Theme Css</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <f:format.raw>{themes.cssruntime}</f:format.raw>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                        <button type="button" class="btn btn-primary">Speichern</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</f:comment>
+
+
+
+<f:spaceless>
+    <f:format.raw>{themes.cssruntime}</f:format.raw>
+</f:spaceless>

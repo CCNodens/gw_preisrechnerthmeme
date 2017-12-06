@@ -1,0 +1,174 @@
+
+
+/* svg color */
+.icon-house-icon,
+.icon-persons-icon,
+.tab-icon {
+	stroke: #fff;
+	fill: #fff;
+}
+
+
+
+.row.content-calculator .tab-content {
+	background: #898d92;
+}
+
+.row.content-calculator ul.nav li.active {
+	background: #83878c;
+}
+
+
+
+.row.content-calculator ul.nav li a:hover {
+	color: #fff;
+}
+
+.row.content-calculator ul.nav li {
+	background: #898d92;
+	background: -moz-linear-gradient(left, #898d92 0%, #a2a2a2 100%);
+	background: -webkit-linear-gradient(left, #898d92 0%, #a2a2a2 100%);
+	background: linear-gradient(to right, #898d92 0%, #a2a2a2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#898d92", endColorstr="#a2a2a2", GradientType=1);
+	opacity: 0.9;
+}
+
+/* equalise fonts and primary text color */
+.row.content-calculator .tab-content #gas.tab-pane ul li::before,
+.row.content-calculator .tab-content #current.tab-pane ul li::before,
+.row.content-calculator .tab-content #heat.tab-pane ul li::before,
+.row.content-calculator ul.nav li a,
+.row.content-calculator {
+	font-family: 'Roboto Regular', sans-serif;
+	content: "• ";
+	color: #fff;
+}
+
+/* equalise fonts and primary headline color */
+.row.content-calculator .tab-content .tab-pane .calculatorContent p {
+	font-family: 'Roboto Light', sans-serif;
+	color: #dcdbd9;
+}
+
+/*  power color theme */
+.row.content-calculator .tab-content #current.tab-pane input {
+	border-bottom: 2px solid #01a427;
+}
+
+.row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .persons.active,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .persons.active {
+	border-color: #01a427;
+	background-color: #01a427;
+}
+.row.content-calculator .tab-content #current.tab-pane .inputField.button input {
+
+	background-color: #01a427;
+	color: #ffffff;
+
+}
+#sumbmitPower {
+	background-color: #01a427;
+}
+
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.active,
+#sumbmitPower:hover {
+	background-color: #01a427;
+	color: #fff;
+}
+
+/*  gas color theme */
+#sumbmitGas {
+	background-color: #ffcc00;
+}
+
+#sumbmitGas:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .numberOfPersons .flatsize.active,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize:hover,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .flatSizes .flatsize.active {
+	border-color: #e6b800;
+	background-color: #e6b800;
+}
+
+/*  heat color theme */
+.row.content-calculator .tab-content #heat.tab-pane input {
+	border-bottom: 2px solid #01a427;
+}
+
+#sumbmitHeat {
+	border-color: #01a427;
+	background-color: #e6b800;
+}
+
+#sumbmitHeat:hover {
+	background-color: #01a422;
+}
+
+/*equalize value input fields all forms*/
+.row.content-calculator .tab-content .tab-pane .calculatorContent input,
+.row.content-calculator .tab-content .tab-pane .calculatorContent select {
+	background-color: #dcdbd9;
+	color: #424242;
+}
+
+/*heizstrom form*/
+/* zaehler selector left bgr */
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select.title,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option.title,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .select,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .option,
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .hhs-col {
+	background-color: #e5e4e2;
+	color: #8f8e8d;
+}
+
+.row.content-calculator .tab-content .tab-pane .calculatorContent .inputField label .select-type .counter-types .ws-col:hover:not(.title) {
+	background-color: #eeedec;
+
+}
+.row.content-calculator .tab-content .tab-pane .calculatorContent h1.title
+.row.content-calculator .tab-content .tab-pane .calculatorContent h2.title,
+.row.content-calculator .tab-content .tab-pane .calculatorContent h3.title {
+
+	color: red;
+}
+/*
+GW Preisrechner Theme
+Override Styles
+
+Color-Vars:
+plugin.tx_gwpreisrechner.settings.theme {
+background=#898d92
+background.tabs=#898d92
+background.tabs.act=#83878c
+background.tabs.gradient=#a2a2a2
+background.tabs.opacity=0.9
+font=#ffffff
+font.hover=#ffffff
+font.headlines=#dcdbd9
+font.family=Roboto Regular
+svg=#ffffff
+svg.fill=#ffffff
+svg.stroke=#ffffff
+power=#01a427
+power.hover=#01a427
+power.font=#ffffff
+gas=#ffcc00
+gas.hover=#e6b800
+gas.font=#ffffff
+heat=#01a427
+heat.font=#ffffff
+heat.hover=#01a422
+input=#424242
+input.bgr=#dcdbd9
+input.select=#8f8e8d
+input.select.right=#dcdbd9
+input.select.right.hover=#eeedec
+input.select.left=#e5e4e2
+}
+
+ */

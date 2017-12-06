@@ -1,0 +1,44 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment><f:debug>{themes}</f:debug></f:comment>
+<f:spaceless>
+
+    <fieldset class="col-sm-12 col-lg-3">
+        <legend>Hintergründe</legend>
+        <div class="form-group ">
+            <label class="form-control-label" for="cf_background">Hintergrundfarbe
+                Formulare</label>
+            <f:form.textfield id="cf_background" name="cf_background" value="{themes.cf_background}" class="form-control colorPicker fullColors" />
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <label class="form-control-label" for="cf_background_tabs">Bgr Color
+                        Tabs </label>
+                    <f:form.textfield id="cf_background_tabs" name="cf_background_tabs" value="{themes.cf_background_tabs}" class="form-control colorPicker fullColors" />
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label class="form-control-label" for="cf_background_tabs_act">Bgr Color
+                        Tabs-Act</label>
+                    <f:form.textfield id="cf_background_tabs_act" name="cf_background_tabs_act" value="{themes.cf_background_tabs_act}" class="form-control colorPicker fullColors" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <label class="form-control-label" for="cf_background_tabs_opacity">Transparenz</label>
+
+                    <div class="colorpicker-component input-group-addon" style="background-image: linear-gradient(to right, <f:format.raw>{themes.cf_background_tabs}</f:format.raw> 0%, <f:format.raw>{themes.cf_background_tabs_gradient}</f:format.raw> 100%);opacity:{themes.cf_background_tabs_opacity};"></div>
+                    <f:form.select id="cf_background_tabs_opacity" class="form-control" value="{themes.cf_background_tabs_opacity}" name="cf_background_tabs_opacity" options="{themes.opacity}" />
+
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label class="form-control-label" for="cf_background_tabs_gradient">Farbverlauf Ziel
+                    </label>
+                    <f:form.textfield id="cf_background_tabs_gradient" name="cf_background_tabs_gradient" value="{themes.cf_background_tabs_gradient}" class="form-control colorPicker fullColors" />
+
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+</f:spaceless>
